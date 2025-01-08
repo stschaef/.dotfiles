@@ -6,7 +6,7 @@
  '(agda-input-user-translations '(("o-" "⟜")))
  '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
  '(org-agenda-files
-   '("/Users/stevenschaefer/org/research/cats+bb/cats+bb-prelim.org" "/Users/stevenschaefer/org/research/LLM_ITP/LLM_ITP.org" "/Users/stevenschaefer/org/research/semester.org" "/Users/stevenschaefer/org/research/regexp.org" "/Users/stevenschaefer/org/research/recent_accomplishments.org" "/Users/stevenschaefer/org/research/Cats+bb-prelim.org" "/Users/stevenschaefer/org/misc/OPLSS/statement_of_motivation.org" "/Users/stevenschaefer/org/misc/letter_for_max.org" "/Users/stevenschaefer/org/journal/09-09-2-23.org" "/Users/stevenschaefer/org/notes.org" "/Users/stevenschaefer/org/journal/12-04-2024.org"))
+   '("/Users/stevenschaefer/org/research/cats+bb/cats+bb-prelim.org" "/Users/stevenschaefer/org/research/LLM_ITP/LLM_ITP.org" "/Users/stevenschaefer/org/research/semester.org" "/Users/stevenschaefer/org/research/regexp.org" "/Users/stevenschaefer/org/research/recent_accomplishments.org" "/Users/stevenschaefer/org/research/Cats+bb-prelim.org" "/Users/stevenschaefer/org/misc/OPLSS/statement_of_motivation.org" "/Users/stevenschaefer/org/misc/letter_for_max.org" "/Users/stevenschaefer/org/journal/09-09-2-23.org" "/Users/stevenschaefer/org/notes.org" "/Users/stevenschaefer/org/journal.org" "/Users/stevenschaefer/org/journal/01-08-2025.org"))
  '(package-selected-packages '(mastodon)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
