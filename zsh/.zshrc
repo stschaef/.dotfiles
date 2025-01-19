@@ -221,3 +221,5 @@ zvm_after_lazy_keybindings() {
   zvm_bindkey vicmd  'P' my_zvm_vi_put_before
 }
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+eval $(opam env)
