@@ -125,4 +125,4 @@
 
 (map! :leader
       (:prefix ("r" . "Forester")
-       :desc "New tree" "n" #'(lambda () (interactive) (forest-new))))
+       :desc "New tree" "n" #'(lambda () (interactive) (forester-new))))

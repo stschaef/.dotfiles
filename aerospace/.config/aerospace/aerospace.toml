@@ -176,7 +176,7 @@ up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-b = ["LG", '^built-in retina display$']
+b = ['^built-in retina display$']
 c = ["dell", "QHD", '^built-in retina display$']
 m = '^built-in retina display$'
 t = '^built-in retina display$'

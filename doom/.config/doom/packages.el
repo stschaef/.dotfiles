@@ -52,7 +52,6 @@
 (package! org-fragtog)
 (package! elfeed)
 (package! framemove)
-(package! yeetube)
 (package! mpv)
 (package! snax
   :recipe (:local-repo "~/OPLSS/pfenning/snax/src" :files ("*.el")))
