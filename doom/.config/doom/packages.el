@@ -49,11 +49,10 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
                                         ;(unpin! t)
                                         ;
+(package! evil-visual-mark-mode)
 (package! org-fragtog)
 (package! elfeed)
 (package! framemove)
 (package! mpv)
 (package! snax
   :recipe (:local-repo "~/OPLSS/pfenning/snax/src" :files ("*.el")))
-(package! forester
-  :recipe (:local-repo "~/forest" :files ("*.el")))

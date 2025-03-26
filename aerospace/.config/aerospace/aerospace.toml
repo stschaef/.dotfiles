@@ -121,13 +121,14 @@ alt-c = 'workspace c'
 alt-m = 'workspace m'
 alt-s = 'workspace s'
 alt-t = 'workspace t'
+alt-p = 'workspace p'
 
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
-# alt-4 = 'workspace 4'
-# alt-5 = 'workspace 5'
-# alt-6 = 'workspace 6'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-b = 'move-node-to-workspace b'
@@ -135,13 +136,14 @@ alt-shift-c = 'move-node-to-workspace c'
 alt-shift-m = 'move-node-to-workspace m'
 alt-shift-s = 'move-node-to-workspace s'
 alt-shift-t = 'move-node-to-workspace t'
+alt-shift-p = 'move-node-to-workspace p'
 
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
-# alt-shift-4 = 'move-node-to-workspace 4'
-# alt-shift-5 = 'move-node-to-workspace 5'
-# alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
 
 alt-a = 'exec-and-forget open -a /Applications/Arc.app'
 alt-e = 'exec-and-forget open -a emacs'
@@ -177,14 +179,17 @@ shift-down = ['volume set 0', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 b = ['^built-in retina display$']
-c = ["dell", "QHD", '^built-in retina display$']
+c = ["dell", "QHD", "LG", '^built-in retina display$']
 m = '^built-in retina display$'
 t = '^built-in retina display$'
 s = '^built-in retina display$'
+p = ["dell", '^built-in retina display$']
 1 = ["LG", "QHD", '^built-in retina display$']
-2 = ["QHD", '^built-in retina display$']  # Case insensitive regex match
-3 = ["dell", '^built-in retina display$']
-
+2 = ["dell", '^built-in retina display$']
+3 = ["LG", "QHD", '^built-in retina display$']
+4 = ["dell", '^built-in retina display$']
+5 = ["LG", "QHD", '^built-in retina display$']
+6 = ["dell", '^built-in retina display$']
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
@@ -195,11 +200,19 @@ if.app-id = 'com.googlecode.iterm2'
 run = 'move-node-to-workspace t'
 
 [[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace t'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'emacs'
 run = 'move-node-to-workspace c'
 
 [[on-window-detected]]
 if.app-id = 'org.zulip.zulip-electron'
+run = 'move-node-to-workspace m'
+
+[[on-window-detected]]
+if.app-id = 'org.whispersystems.signal-desktop'
 run = 'move-node-to-workspace m'
 
 [[on-window-detected]]
@@ -213,3 +226,19 @@ run = 'move-node-to-workspace m'
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace s'
+
+[[on-window-detected]]
+if.app-id = 'com.adobe.Acrobat.Pro'
+run = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'net.sourceforge.skim-app.skim'
+run = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'org.zotero.zotero'
+run = 'move-node-to-workspace p'
+
+[[on-window-detected]]
+if.app-id = 'com.gingerlabs.Notability'
+run = 'move-node-to-workspace 1'

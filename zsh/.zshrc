@@ -222,4 +222,4 @@ zvm_after_lazy_keybindings() {
 }
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 
-eval $(opam env)
+eval $(opam env --switch=5.2.0)

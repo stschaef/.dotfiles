@@ -123,6 +123,4 @@
 (add-hook 'tex-mode-hook 'turn-on-auto-fill)
 (setq-default fill-column 80)
 
-(map! :leader
-      (:prefix ("r" . "Forester")
-       :desc "New tree" "n" #'(lambda () (interactive) (forester-new))))
+(evil-visual-mark-mode 1)
